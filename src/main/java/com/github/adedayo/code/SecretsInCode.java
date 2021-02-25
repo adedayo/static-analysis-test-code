@@ -1,4 +1,4 @@
-package com.github.adedayo.test;
+package com.github.adedayo.code;
 
 public class SecretsInCode {
     String password = "sssw$S4466gxqww3_Suuuqedqedqe%$Axwadasxcacascasca";
@@ -20,11 +20,9 @@ public class SecretsInCode {
         System.out.println(
                 "VGhpcyBxdWVyeSB3YXMgc2VydmVkIGJ5IHRoZSBSSVBFIERhdGFiYXNlIFF1ZXJ5IFNlcnZpY2UgdmVyc2lvbiAxLjk1LjEgKEJMQUFSS09QKQo=");
 
-        System.out.println(
-                "aW{**7]K&E4,`}$G{!q;FjH`/]cS_@"
-        );
+        System.out.println("aW{**7]K&E4,`}$G{!q;FjH`/]cS_@");
 
-        if(credential.equals("aW{**7]K&E4,`}$G{!q;FjH`/]cS_@")) {
+        if (credential.equals("aW{**7]K&E4,`}$G{!q;FjH`/]cS_@")) {
             System.out.println("Entered expected credential");
         }
         String user_passphrase = "This is a secret passphrase. No one will find out";

@@ -1,4 +1,4 @@
-package com.github.adedayo.test;
+package com.github.adedayo.code;
 
 import java.sql.*;
 import java.util.Random;
@@ -13,15 +13,15 @@ public class SQLInjection {
     boolean inject = (new SQLInjectionExtended()).execute("This is a body call");
 
     public SQLInjection() throws SQLException {
+        throw new UnsupportedOperationException();
     }
-
 
     public ResultSet queryDB(String query) throws SQLException {
         int y = 4 + (new Random()).nextInt();
         System.out.println(y);
-//        query += this.executeMyQuery("First execution " + query + y);
+        // query += this.executeMyQuery("First execution " + query + y);
         System.out.println(query);
-//        query += "select * from table where name='test'" + y;
+        // query += "select * from table where name='test'" + y;
         Connection conn = DriverManager.getConnection("SomeConnectionString");
         Statement stmt = conn.createStatement();
         boolean queried = stmt.execute(query);
@@ -58,7 +58,7 @@ public class SQLInjection {
         int m = y - 2;
         System.out.println(y);
         SQLInjectionExtended inject = new SQLInjectionExtended();
-//        String r = q + y + z;
+        // String r = q + y + z;
         inject.execute(classField + q + y + z + m);
         return inject.executeQuery(q);
 

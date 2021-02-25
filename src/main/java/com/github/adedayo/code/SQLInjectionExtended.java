@@ -1,5 +1,6 @@
-package com.github.adedayo.test;
+package com.github.adedayo.code;
 
+import java.nio.channels.UnsupportedAddressTypeException;
 import java.sql.*;
 import java.util.Random;
 
@@ -18,7 +19,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void close() throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int getMaxFieldSize() throws SQLException {
@@ -26,7 +27,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setMaxFieldSize(int max) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int getMaxRows() throws SQLException {
@@ -34,11 +35,11 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setMaxRows(int max) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public void setEscapeProcessing(boolean enable) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int getQueryTimeout() throws SQLException {
@@ -46,11 +47,11 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setQueryTimeout(int seconds) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public void cancel() throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public SQLWarning getWarnings() throws SQLException {
@@ -58,11 +59,11 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void clearWarnings() throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public void setCursorName(String name) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public boolean execute(String sql) throws SQLException {
@@ -82,7 +83,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setFetchDirection(int direction) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int getFetchDirection() throws SQLException {
@@ -90,7 +91,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setFetchSize(int rows) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int getFetchSize() throws SQLException {
@@ -106,11 +107,11 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void addBatch(String sql) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public void clearBatch() throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public int[] executeBatch() throws SQLException {
@@ -162,7 +163,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void setPoolable(boolean poolable) throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public boolean isPoolable() throws SQLException {
@@ -170,7 +171,7 @@ public class SQLInjectionExtended implements Statement {
     }
 
     public void closeOnCompletion() throws SQLException {
-
+        throw new UnsupportedAddressTypeException();
     }
 
     public boolean isCloseOnCompletion() throws SQLException {
@@ -185,5 +186,3 @@ public class SQLInjectionExtended implements Statement {
         return false;
     }
 }
-
-
