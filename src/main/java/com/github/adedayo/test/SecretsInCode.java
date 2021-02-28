@@ -1,4 +1,4 @@
-package com.github.adedayo.code;
+package com.github.adedayo.test;
 
 public class SecretsInCode {
     String password = "sssw$S4466gxqww3_Suuuqedqedqe%$Axwadasxcacascasca";
